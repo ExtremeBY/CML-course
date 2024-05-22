@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>Promotions And Coupons</title>
+    <link rel="stylesheet" href="CSS+SCSS/promotions_and_coupons.css" media="screen">
+    <link rel="stylesheet" href="CSS+SCSS/general.css" media="screen">
+    <link rel="stylesheet" href="CSS+SCSS/hamburger.css">
+    <script src="JS/hamburger.js"></script>
+   </head>
+  <body>
+   <header class="header">
+      <div class="sheet sheet-1">
+         <img class="image-contain image-default image-1" src="PICTURES/Logo.svg">
+         <p class="log text-block text-1"><a href="about_us.html" style="text-decoration: none; color: black !important;">1-ый Канцелярский</a></p>
+         <nav class="menu men1">
+            <div>
+               <ul class="nav">
+                  <li class="nav-item"><a class="nav-link" href="main.html" style="padding: 10px 20px;">ГЛАВНАЯ</a></li>
+                  <li class="nav-item"><a class="nav-link" href="catalog.html" style="padding: 10px 20px;">ТЕТРАДИ/АЛЬБОМЫ</a></li>
+                  <li class="nav-item"><a class="nav-link" href="mistake.html" style="padding: 10px 20px;">РУЧКИ/КАРАНДАШИ</a></li>
+                  <li class="nav-item"><a class="nav-link" href="promotions_and_coupons.html" style="padding: 10px 20px;">АКЦИИ/КУПОНЫ</a></li>
+               </ul>
+            </div>
+         </nav>
+      </div>
+      <span class="reg-icon icon icon-1">
+         <a href="sign_in.html"><img src="PICTURES/sign_in_profile.png"></a>
+      </span>
+   </header>
+   
+   <nav style="display: flex; justify-content: flex-start; margin: 50px 0px 0px 0px">
+      <button class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+      </button>
+      <div id="hamburger-menu" style="display: none; text-align: left;">
+            <a class="nav-link" href="about_us.html" style="padding: 3px;">О НАС</a>
+            <a class="nav-link" href="catalog.html" style="padding:  3px;">КАТАЛОГ ТЕТРАДЕЙ</a>
+            <a class="nav-link" href="promotions_and_coupons.html" style="padding: 3px;">КУПОНЫ</a>
+      </div>
+  </nav>
+  
+ <div class="product-container">
+
+   <div class="product product-1">
+     <img src="PICTURES/coupon.png" alt="Product 1">
+     <p class="price">-30% при покупке от 20 BYN </p>
+     <button class="get-button one">Получить</button>
+   </div>
+
+   <div class="product product-2">
+     <img src="PICTURES/coupon.png" alt="Product 2">
+     <p class="price sec">-10% на новую продукцию</p>
+     <button class="get-button two">Недоступно</button>
+   </div>
+   
+ </div>
+ <script>
+   var button = document.querySelector('.get-button.one');
+   button.addEventListener('click', function() {
+     button.textContent = 'Приобретено';
+   });
+ </script>
+ 
+    
+ <footer class="footer">       
+   <div class="sheet layout-cell ">          
+      <div>                
+         <div class="position-1">
+           <h5>+375 12 345 67 89<br>
+               1-iy_kancelyarskiy@gmail.com
+            </h5>
+            <div>
+               <br>г. Минск, ул. Веры Хоружей 1А<br>&#169; 1-ый Канцелярский<br>
+            </div>
+         </div>
+      </div>
+   </div> 
+</footer>
+</body>
+</html>

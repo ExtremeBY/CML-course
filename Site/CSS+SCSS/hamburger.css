@@ -1,0 +1,52 @@
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+.hamburger div {
+    width: 2rem;
+    height: 0.25rem;
+    background: #333;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+}
+
+#hamburger-menu {
+    display: none;
+    text-align: center;
+}
+
+@media (max-width: 575px) {
+    .hamburger {
+        display: flex;
+    }
+    .menu {
+        display: none;
+    }
+}
+
+.hamburger.open div:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.hamburger.open div:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open div:nth-child(3) {
+    transform: rotate(-45deg);
+}

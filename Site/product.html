@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Product</title>
+      <link rel="stylesheet" href="CSS+SCSS/general.css" media="screen">
+      <link rel="stylesheet" href="CSS+SCSS/product.css" media="screen">
+      <link rel="stylesheet" href="CSS+SCSS/hamburger.css">
+      <script src="JS/hamburger.js"></script>
+      <script class="script" type="text/javascript" src="JS/js.js" defer=""></script>
+   </head>
+   <body class="body xl-mode" data-lang="ru">
+      <header class="header">
+         <div class="sheet sheet-1">
+            <img class="image-contain image-default image-1" src="PICTURES/Logo.svg">
+            <p class="log text-block text-1"><a href="about_us.html" style="text-decoration: none; color: black !important;">1-ый Канцелярский</a></p>
+            <nav class="menu men1">
+               <div>
+                  <ul class="nav">
+                     <li class="nav-item"><a class="nav-link" href="main.html" style="padding: 10px 20px;">ГЛАВНАЯ</a></li>
+                     <li class="nav-item"><a class="nav-link" href="catalog.html" style="padding: 10px 20px;">ТЕТРАДИ/АЛЬБОМЫ</a></li>
+                     <li class="nav-item"><a class="nav-link" href="mistake.html" style="padding: 10px 20px;">РУЧКИ/КАРАНДАШИ</a></li>
+                     <li class="nav-item"><a class="nav-link" href="promotions_and_coupons.html" style="padding: 10px 20px;">АКЦИИ/КУПОНЫ</a></li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+         <span class="reg-icon icon icon-1">
+            <a href="sign_in.html"><img src="PICTURES/sign_in_profile.png"></a>
+         </span>
+      </header>
+      
+     <nav style="display: flex; justify-content: flex-start; margin: 50px 0px 0px 0px">
+      <button class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+      </button>
+      <div id="hamburger-menu" style="display: none; text-align: left;">
+            <a class="nav-link" href="about_us.html" style="padding: 3px;">О НАС</a>
+            <a class="nav-link" href="catalog.html" style="padding:  3px;">КАТАЛОГ ТЕТРАДЕЙ</a>
+            <a class="nav-link" href="promotions_and_coupons.html" style="padding: 3px;">КУПОНЫ</a>
+      </div>
+  </nav>
+  
+      <section class="align-center clearfix section-1" id="sec-8e72">
+         <div class="clearfix sheet sheet-1">
+            <div class="carousel gallery layout-carousel lightbox no-transition show-text-none gallery-1" data-interval="5000" data-ride="carousel" id="carousel-9387">
+               <div class="slider-container">
+                  <div class="slider-images">
+                    <img src="PICTURES/Album_13.webp" alt="Image 1">
+                    <img src="PICTURES/Pencil.png" alt="Image 2">
+                  </div>
+                  <div class="slider-arrows">
+                    <div class="arrow-left">&lt;</div>
+                    <div class="arrow-right">&gt;</div>
+                  </div>
+                </div>
+                
+            </div>
+            <p class="text-default text-1"> №​13</p>
+            <h2 class="text-default text-2">Альбом для рисования</h2>
+            <h2 class="text-default text-2">с простым карандашом</h2>
+            <p class="text-custom-color-2 text-default text-4">4 BYN</p>
+            <a class="border-js btn button-style hover-black btn-1">ДОБАВИТЬ В КОРЗИНУ</a>
+         </div>
+      </section>
+      <section class="similar-products">
+  <div class="product-list">
+   
+    <div class="product">
+      <img src="PICTURES/Pen.png" alt="Product 1">
+      <h3>№1</h3>
+      <button id="btd">Открыть</button>
+      <script>document.getElementById("btd").addEventListener("click", function() {
+         window.location.href = "mistake.html";
+       });
+       </script>
+    </div>
+    <div class="product">
+      <img src="PICTURES/Album.png" alt="Product 2">
+      <h3>№2</h3>
+      <button id="btd1">Открыть</button>
+      <script>document.getElementById("btd1").addEventListener("click", function() {
+         window.location.href = "mistake.html";
+       });
+       </script>
+    </div>
+    
+    <div class="product">
+      <img src="PICTURES/Notebook.png" alt="Product 3">
+      <h3>№3</h3>
+      <button id="btd2">Открыть</button>
+      <script>document.getElementById("btd2").addEventListener("click", function() {
+         window.location.href = "mistake.html";
+       });
+       </script>
+    </div>
+    <div class="product">
+      <img src="PICTURES/Pencil.png" alt="Product 3">
+      <h3>№4</h3>
+      <button id="btd3">Открыть</button>
+      <script>document.getElementById("btd3").addEventListener("click", function() {
+         window.location.href = "mistake.html";
+       });
+       </script>
+    </div>
+    
+  </div>
+</section>
+
+
+<footer class="footer">       
+   <div class="sheet layout-cell">          
+      <div>                
+         <div class="position-1">
+           <h5>+375 12 345 67 89<br>
+               1-iy_kancelyarskiy@gmail.com
+            </h5>
+            <div>
+               <br>г. Минск, ул. Веры Хоружей 1А<br>&#169; 1-ый Канцелярский<br>
+            </div>
+         </div>
+      </div>
+   </div> 
+</footer>
+   </body>
+</html>
